@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Mohammad Zamani Portfolio</title>
+</head>
+
+<body>
+    <section id="section1">
+        <!-- Nav Bar -->
+        <nav>
+            <div id="right-part">
+                <a href="./index.html">Home</a>
+                <a href="./blog/blog.html">Blog</a>
+                <a href="./about-me/about-me.html">About</a>
+                <a href="./services/services.html">Services</a>
+            </div>
+            <div id="left-part">
+                <button id="contact" class="round-button">Contact</button>
+            </div>
+        </nav>
+        <div id="main" class="row">
+            <div class="column">
+                <h1>I Build Mobile Apps</h1>
+                <h1>And Websites</h1>
+                <p>I will turn your ideas into seamless Mobile Apps</p>
+
+                <div id="home-page-buttons" class="">
+                    <button id="see-my-work" class="round-button">See my work</button>
+                    <button id="hire-me" class="round-button" onclick="scrollToSection('last-section')">
+                        Hire Me
+                    </button>
+                </div>
+            </div>
+
+            <img src="images/guy.jpg" alt="my photo for Portfolio" class="right-image animation fade-in slide-left">
+        </div>
+    </section>
+
+    <!-- My Projects as Grid Tiles -->
+    <section id="section3" class="animation-section">
+        <h2 id="my-projects" class="title-text">My Projects</h2>
+
+        <div class="grid-container animation">
+            <div class="grid-item">
+                <img src="images/bazaar.png" alt="Project 1 image" class="project-image">
+                <div class="project-name">Bazaar</div>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/budget.png" alt="Project 2 image" class="project-image">
+                <div class="project-name">Budget Tracker</div>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/planner.png" alt="Project 3 image" class="project-image">
+                <div class="project-name">Planner</div>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/recipe.png" alt="Project 4 image" class="project-image">
+                <div class="project-name">My Kitchen</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last section -->
+    <section id="last-section" class="">
+        <h1 id="about-me-text">About Me</h1>
+        <div id="about-me" class="slide-left fade-in">
+            <div id="container" class="column">
+                <div>
+                    <p id="contact-me">CONTACT ME</p>
+                    <p>Need a Mobile App? Let's connect</p>
+                </div>
+    
+                <div>
+                    <img style="width: 100px;" alt="google icon" src="icons/gmail-logo.png">
+                    <a id="email" href="mailto:mohammadzamaniaf313@gmail.com">mohammadzamaniaf313@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

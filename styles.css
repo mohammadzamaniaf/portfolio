@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3%;
+    font-family: 'Open Sans', sans-serif;
+    color: #495057;
+}
+
+#section1 {
+    height: 100vh;
+}
+
+/* Nav Bar related codes are here */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    /* Write what happens when you hover over a nav item */
+    color: #34A1CD;
+}
+
+#contact {
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+
+/* Main Part (Info about me and my image) */
+
+.right-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+h1 {
+    transition: transform .3s ease-in-out;
+}
+
+h1:hover {
+    transform: translateY(-10px);
+    color: #34A1CD;
+}
+
+#main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#main div h1 {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main .column p {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+.round-button {
+    font-size: 1.2rem;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    color: white;
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-left: 20;
+    padding-right: 20;
+    transition: transform 0.3s ease-in-out;
+}
+
+.round-button:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+#see-my-work {
+    background-color: #34A1CD;
+    margin-right: 15px;
+}
+
+#hire-me {
+    background-color: #130F49;
+}
+
+#home-page-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+/* ******************************************************************************************************************************************************************************************************************************************************************************************************* */
+
+/* Hire me section */
+
+#last-section {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+#about-me {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+    font-size: 4rem;
+}
+
+#container {
+    background-color: #E9F9FF;
+    border-radius: 25px;
+    margin: 36px;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container p {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section div #contact-me {
+    font-size: medium;
+    color: #B7B6C8;
+}
+
+#email {
+    font-size: xx-large;
+    color: #B7B6C8;
+    text-decoration: none;
+}
+
+/* ******************************************************************************************************************************************************************************************************************************************************************************************************* */
+/* Projects Section */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust column size as needed */
+    gap: 40px; /* Adjust gap between items as needed */
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px; /* Match the border radius of the grid item */
+    border-bottom-right-radius: 10px;
+}
+
+#my-projects {
+    padding-bottom: 1rem;
+    color: #111119;
+}
+
+/* ******************************************************************************************************************************************************************************************************************************************************************************************************* */
+
+/* Animations section */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
+.slide-left {
+    transform: translateX(100px);
+    transition: transform 1s ease-in-out;
+}
+
+.slide-left.visible {
+    transform: translateX(0);
+}
+
+.animation {
+    opacity: 1;
+    transform: translateX(150px); /* Initial position, adjust as needed */
+    transition: opacity 1s, transform 1s;
+}
+
+.animation.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ******************************************************************************************************************************************************************************************************************************************************************************************************* */
+
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
+
+.title-text {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
